@@ -83,3 +83,5 @@ typings/
 src/config/
 
 .vscode
+
+tmp
