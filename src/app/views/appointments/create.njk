@@ -18,7 +18,33 @@
   </div>
 
   <script type="text/javascript">
-    flatpickr('.flatpickr', {
+    flatpickr(".flatpickr", {
+      minDate: new Date(),
+      dateFormat: "d/m/Y H:m",
+      enableTime: true,
+      minTime: "08:00",
+      maxTime: "20:00",
+      time_24hr: true,
+      //onClose: displayAvailability()
+    });
+
+
+    function displayAvailability() {
+      const date = new Date()
+      console.log(date.getTime())
+      fetch(`/app/available/{{ provider.id }}?date=${date.getTime()}`)
+          .then(
+            function(response) {
+              response.text().then(
+                function (html) {
+                  document.getElementById('hours').innerHTML = html;
+                }
+              )
+            }
+          )
+      }
+
+    {# flatpickr('.flatpickr', {
       minDate: new Date(),
       dateFormat: 'd/m/Y',
       onChange: function(date) {
@@ -33,6 +59,6 @@
             }
           )
       }
-    })
+    }) #}
   </script>
 {% endblock %}
