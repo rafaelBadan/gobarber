@@ -79,9 +79,6 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-# config
-src/config/
-
 .vscode
 
 tmp
