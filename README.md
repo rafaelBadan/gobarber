@@ -1,6 +1,6 @@
 # Rocketseat Bootcamp
 
-Rocketseat Bootcamp is focused on NodeJS, React and React Native. It is based on hands-on development of several apps with different approaches, from MVC with templating views (nunjucks), to REST APIs with React and React Native front-end consuming those APIs.
+[Rocketseat Bootcamp](https://github.com/Rocketseat/bootcamps) is focused on NodeJS, React and React Native. It is based on hands-on development of several apps with different approaches, from MVC with templating views (nunjucks), to REST APIs with React and React Native front-end consuming those APIs.
 
 # GoBarber App
 
