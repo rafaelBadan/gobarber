@@ -21,7 +21,7 @@ class SessionController {
     }
 
     req.session.user = user
-
+    console.log('USER:', req.session.user)
     return res.redirect('/app/dashboard')
   }
 
