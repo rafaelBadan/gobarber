@@ -9,9 +9,9 @@ Each barber is able to view a daily schedule displaying each one of the appointm
 
 ## Stack
 
-NodeJS
-Nunjucks
-Express
-Sequelize
-Docker
-PostgreSQL
+- NodeJS
+- Nunjucks
+- Express
+- Sequelize
+- Docker
+- PostgreSQL
